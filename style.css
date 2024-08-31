@@ -1,0 +1,793 @@
+/* Custom styles */
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-text {
+    color: #ffffff;
+}
+
+.lead {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Warna Dasar */
+
+.bg-primary {
+    background-color: #0F1584 !important;
+}
+
+.bg-danger {
+    background-color: #b22222 !important;
+}
+
+
+/* Header */
+
+.header-logo {
+    height: 40px;
+    max-height: 50px;
+    margin-right: auto;
+}
+
+.bg-primary .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-primary .d-none.d-lg-flex {
+    margin-left: auto;
+}
+
+.btn-warning,
+.btn-success {
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.banner .content {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.banner h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner p {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #000000 !important;
+    /* Pastikan background benar-benar hitam */
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 5px solid #000000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* White color for headings */
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ffffff;
+    /* White color for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    text-align: left;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom p {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+
+.footer img {
+    max-width: 100px;
+    /* Adjust the size of the logos */
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-social-media h2 {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/* Logo Styles */
+
+.footer-group-company img {
+    max-width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+.client-logo {
+    margin: 10px;
+    text-align: center;
+}
+
+.client-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.hidden-logo {
+    display: none;
+}
+
+.show-more .hidden-logo {
+    display: block;
+}
+
+
+/* Media Query untuk Responsiveness */
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .left,
+    .right {
+        border: none;
+    }
+    .item {
+        flex: 1 1 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+    .footer-bottom nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-bottom nav a {
+        margin: 5px 0;
+    }
+    .footer-bottom nav {
+        display: block;
+    }
+    .footer-bottom nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-section {
+        flex: 1 1 45%;
+    }
+}
+
+
+/* Animasi efek zoom pada gambar */
+
+.custom-img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Jarak antar kolom */
+
+.col {
+    position: relative;
+    padding: 15px;
+}
+
+.col:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #ddd;
+}
+
+
+/* Animasi fade-in dan fade-up */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Custom styles */
+
+
+/* Custom styles */
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.zigzag-section {
+    background-color: #1f3b6d;
+    /* Blue background for the entire zigzag section */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about-content {
+    background-color: #ffffff;
+    /* White background for each content block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    /* Change this to any color you prefer */
+    text-decoration: none;
+    /* Optional: Removes the underline */
+}
+
+.footer-bottom a:hover {
+    color: #555;
+    /* Change this to a different color for hover effect */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* General Styling */
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-header h1,
+.main-header h2 {
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    margin-bottom: 30px;
+}
+
+
+/* Grid Layout for Content */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.main-row {
+    display: contents;
+}
+
+.top-main-row,
+.bottom-main-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.middle-main-row {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+
+/* Card Styling */
+
+.main-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.main-card p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+
+/* Emoticon Placement */
+
+.main-card[data-emoji] h3::before {
+    content: attr(data-emoji);
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Vertical Divider */
+
+.main-row::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.bottom-main-row {
+    margin-top: 20px;
+}
+
+
+/* Single Column Styling */
+
+.middle-main-row {
+    grid-template-columns: 1fr;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    .top-main-row,
+    .bottom-main-row {
+        grid-template-columns: 1fr;
+    }
+    .main-row::after {
+        display: none;
+    }
+}
+
+
+/* Clients Section */
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.client-logo.hidden-logo {
+    display: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+
+/* Responsive Styling */
+
+@media (min-width: 576px) {
+    .row-cols-2>* {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .row-cols-md-4>* {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+
+/* Horizontal box behind the map */
+
+.horizontal-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* Adjust the height as needed */
+    background-color: #007bff;
+    /* Primary color */
+    transform: translateY(-50%);
+    z-index: -1;
+    border-radius: 0.5rem;
+    /* Rounded corners for the box */
+}
+
+
+/* Base Styles */
+
+.custom-container {
+    padding: 2rem;
+}
+
+
+/* Wrapper for info sections */
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+
+/* Office details */
+
+.office-details,
+.social-media-details {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.office-title,
+.social-media-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.office-address,
+.social-media-description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Social media icons */
+
+.social-media-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    background-color: #007bff;
+    /* Default background color */
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.instagram {
+    background-color: #e4405f;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+}
+
+
+/* Career section */
+
+.career-wrapper {
+    background-color: #f1f3f5;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.career-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.career-description {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.career-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .info-wrapper {
+        flex-direction: column;
+        /* Stack sections vertically on smaller screens */
+    }
+    .office-details,
+    .social-media-details {
+        width: 100%;
+        /* Full width for each section */
+    }
+    .social-media-icons {
+        flex-direction: column;
+        /* Stack social media icons vertically */
+        align-items: center;
+        /* Center icons horizontally */
+    }
+    .social-icon {
+        margin-bottom: 0.5rem;
+        /* Add space between icons */
+    }
+}
+
+@media (max-width: 576px) {
+    .office-title,
+    .social-media-title,
+    .career-title {
+        font-size: 1.25rem;
+        /* Smaller title font size */
+    }
+    .office-address,
+    .social-media-description,
+    .career-description {
+        font-size: 0.875rem;
+        /* Smaller paragraph font size */
+    }
+    .career-wrapper {
+        padding: 1rem;
+        /* Less padding on smaller screens */
+    }
+}
