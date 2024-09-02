@@ -791,3 +791,196 @@ body {
         /* Less padding on smaller screens */
     }
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.vision-mission-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card-row.middle-row {
+    justify-content: center;
+}
+
+.vision-card,
+.mission-card,
+.solving-card,
+.speed-card,
+.passion-card,
+.fun-card,
+.innovation-card,
+.career-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    width: 28%;
+    margin-bottom: 20px;
+}
+
+.middle-row .solving-card {
+    width: 24%;
+}
+
+.innovation-fun-row .fun-card,
+.innovation-fun-row .innovation-card {
+    width: 28%;
+}
+
+.career-row .career-card {
+    width: 50%;
+}
+
+
+/* New Styles for Images */
+
+.vision-card img,
+.mission-card img,
+.solving-card img,
+.speed-card img,
+.passion-card img,
+.fun-card img,
+.innovation-card img,
+.career-card img {
+    width: 50px;
+    /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* Card Colors */
+
+.vision-card {
+    background-color: #A62E36;
+    color: #fff;
+}
+
+.mission-card {
+    background-color: #436A5A;
+    color: #fff;
+}
+
+.solving-card {
+    background-color: #CF1F20;
+    color: #fff;
+}
+
+.speed-card {
+    background-color: #2E69A6;
+    color: #fff;
+}
+
+.passion-card {
+    background-color: #E85181;
+    color: #fff;
+}
+
+.fun-card {
+    background-color: #F79122;
+    color: #fff;
+}
+
+.innovation-card {
+    background-color: #ADC62A;
+    color: #fff;
+}
+
+.career-card {
+    background-color: #707798;
+    color: #fff;
+}
+
+.card-row:not(:first-child):not(:last-child) {
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .vision-card,
+    .mission-card,
+    .solving-card,
+    .speed-card,
+    .passion-card,
+    .fun-card,
+    .innovation-card,
+    .career-card {
+        width: 45%;
+    }
+    .middle-row .solving-card {
+        width: 60%;
+    }
+    .career-row .career-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-card,
+    .mission-card,
+    .solving-card,
+    .speed-card,
+    .passion-card,
+    .fun-card,
+    .innovation-card,
+    .career-card {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    .middle-row .solving-card {
+        width: 80%;
+    }
+    .career-row .career-card {
+        width: 90%;
+    }
+}
+
+.about-content {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    /* Adds shadow for a 3D effect */
+    transform: perspective(1000px) rotateY(5deg);
+    /* Slight rotation for 3D depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-content:hover {
+    transform: perspective(1000px) rotateY(-5deg);
+    /* Change the rotation direction on hover */
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    /* Adds shadow for a 3D effect */
+    transform: perspective(1000px) rotateY(-5deg);
+    /* Slight rotation for 3D depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+    transform: perspective(1000px) rotateY(5deg);
+    /* Change the rotation direction on hover */
+}
